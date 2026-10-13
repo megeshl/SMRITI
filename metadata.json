@@ -1,0 +1,6 @@
+{
+  "name": "SMRITI — Personal Cognitive Care",
+  "description": "Personalized cognitive intelligence platform transforming familiar memories into gentle cognitive activities and caregiver insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

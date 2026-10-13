@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+
+  --color-smriti-teal: #167D83;
+  --color-smriti-darkteal: #075B60;
+  --color-smriti-cream: #FBF8EF;
+  --color-smriti-sage: #E5EFE7;
+  --color-smriti-mint: #DDF5EB;
+  --color-smriti-amber: #F4A261;
+  --color-smriti-violet: #A78BFA;
+  --color-smriti-skyblue: #8ED8EE;
+  --color-smriti-green: #22C55E;
+  --color-smriti-red: #EF4444;
+  --color-smriti-text: #17324D;
+  --color-smriti-muted: #617386;
+  --color-smriti-border: #E6EAE5;
+}
+
+/* Base accessibility and comfortable elderly-friendly readability */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: #17324D;
+  background-color: #FBF8EF;
+}
+
+/* High contrast mode helper */
+body.high-contrast {
+  --color-smriti-text: #0B1926;
+  --color-smriti-muted: #2E3E4E;
+  --color-smriti-border: #99B2A8;
+}
+
+body.simple-mode {
+  font-size: 110%;
+}
+
+/* Focus indicator for elderly accessibility */
+:focus-visible {
+  outline: 3px solid #167D83;
+  outline-offset: 3px;
+}
+
+/* Clean scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF8EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5DFDA;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #167D83;
+}
